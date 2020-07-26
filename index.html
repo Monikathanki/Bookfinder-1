@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header role="hading" class="header">
+      <h1 class="top skyblue">Google-Books</h1>
+      <h1 class="bottom orange">Author wiki</h1>
+    </header>
+    <main role="main">
+       <div class="container">
+        <form id="js-form" role="form">
+          <fieldset>
+            <legend>Search Book title or Author</legend>
+            <label for="search-term" label>
+				    <input class="js-query" placeholder="Search..." type="text" name="query" id="search-term">
+				    <button id="js-search" type="submit">Submit</button>
+             
+			    </fieldset>
+        </form>
+      </div>
+
+  
+      <section id="results"class="results hidden" role="region">
+        <ul id="gb-results"></ul>
+        <ul id="wiki-results"></ul>
+      </section>
+    </main>
+    <script
+     src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+     crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+ 
+</html>
