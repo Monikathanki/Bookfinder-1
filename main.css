@@ -3,6 +3,9 @@
   margin: 0;
 
 }
+main {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -74,6 +77,14 @@ h1 {
  line-height: 1;
 }
 
+a {
+  margin-left: 50px;
+  height: 60%;
+  margin-top: 30px;
+}
+
+
+
 .top, .bottom, {
 	font-size: 30px;
   font-family: 'Fjalla One', sans-serif;
@@ -127,8 +138,8 @@ legend {
 
 
 .wiki {
-  background-color: #8DADCA;
-  color: white;
+  background-color: #0058CA;
+  color: #FFF;
   position: relative;
 }
 
@@ -140,7 +151,10 @@ h2.card {
 	display: none;
 }
 
-
+.author {
+	text-align: center;
+	background-color: rgba(26,26,26,0.25);
+}
 
 h2.card {
   font-family: 'Lato', sans-serif;
@@ -150,11 +164,22 @@ h2.card {
   background-color: #0058CA;
   color: #FFF;
   position: relative;
-  text-align: center;
-  width: 100%;
 }
 
 /* wiki styles */
+
+
+.channel {
+  font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px 25px;
+  font-size: 15px;
+  transition: all 1s ease-out;
+  text-shadow: 2px 2px 5px #0a51ab;
+  letter-spacing: .04em;
+}
+
 .wiki-pic {
   width: 120px;
   height: auto;
@@ -171,49 +196,20 @@ h2.card {
 	overflow: hidden;
 }
 
-.channel {
-  font-family: 'Fjalla One', sans-serif;
-  margin-bottom: 10px;
-  text-align: center;
-  padding: 15px 25px;
-  font-size: 15px;
-  transition: all 1s ease-out;
-  text-shadow: 2px 2px 5px #0a51ab;
-  letter-spacing: .04em;
-}
 
 
 
-.img {
-	float: left;
-	margin-right: 20px;
-  margin-bottom: 20px;
- 	margin-top: 20px;
-  width: 250px;
-  border: 1px solid Gainsboro;
-	box-shadow: 1px 1px 1px;
-	overflow: hidden;
-}
-
-
-.authorName {
-	text-align: center;
-	background-color: rgba(26,26,26,0.25);
-
-}
-
-.authorName > h1  {
+.author > h1  {
 	margin: 0 auto;
 	color: white;
-	padding: 15px;
+	padding: 30px;
 }
 
-.authorName > p  {
+.author > p  {
 	width: 50%;
 	margin: 0 auto;
 	color: white;
-	padding-bottom: 20px;
-  
+	padding-bottom: 45px;
 }
 
 .gb-thumbs {
@@ -242,21 +238,64 @@ h2.card {
   margin-right: 3%;
 }
 
-#gb-results {
-  background: white;
-  border: 1px solid blue;
-  margin: 20px;
-  padding: 20px;
-  height: 880%;
+/* new css */
 
+input[type="text"] {
+  display: block;
+  margin: 5px auto;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+.radio-label {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  padding: 2px;
+  margin-right: 20px;
 }
 
 #wiki-results {
   background: white;
-  border: 1px solid blue;
-  margin: 20px;
+  margin: 25px;
   padding: 20px;
-  height: 140%;
+  border: 1px solid black;
+
+}
+
+#gb-results {
+  background: white;
+  margin: 25px;
+  padding: 20px;
+  border: 1px solid black;
+
+}
+
+footer {
+  padding-top: 80px;
+  box-sizing: border-box;
+
+}
+
+
+
+.info > button {
+  height: 40px;
+  padding: 10px;
+  margin-right: 85%;
+  border: 1px solid black;
+}
+
+.info > p {
+  background: black;
+  color: orange;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  height: 30%;
+  padding: 15px;
 }
 
 @media (min-width: 320px), screen and (orientation: portrait) {
@@ -266,7 +305,9 @@ h2.card {
     font-size: 10px;
     box-shadow: 4px 4px 10px;
   }
- }
+}
+
+
 @media only screen and (min-width: 641px) {
   .gb-row  {
     overflow: hidden;
@@ -275,10 +316,6 @@ h2.card {
     display: inline-block;
   }
 }
-
-
-
-
 
 
 
