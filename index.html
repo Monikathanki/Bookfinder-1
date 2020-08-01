@@ -15,10 +15,16 @@
     <main role="main">
        <div class="container">
         <form id="js-form" role="form">
+          
           <fieldset>
             <legend>Search Book title or Author</legend>
+            <input type="radio" class="title-select" name="books" value="title" checked/>
+            <label class="radio-label">Title</label>
+            <input type="radio" class="author-select" name="books" value="author" />
+            <label class="radio-label">Author</label>
             <label for="search-term" label>
-				    <input class="js-query" placeholder="Search..." type="text" name="query" id="search-term">
+				    <input class="title-input" placeholder="Title..." type="text" name="query" required>
+            <input class="author-input" placeholder="Author..." type="text" name="query">
 				    <button id="js-search" type="submit">Submit</button>
              
 			    </fieldset>
@@ -31,6 +37,13 @@
         <ul id="wiki-results"></ul>
       </section>
     </main>
+    <footer>
+      </div> <div class="info">
+        <button id="js-info" type"submit">info</button>
+        <p id="moreInfo" class="moreInfo hidden">Want to know about your favorite author or book? Type the book title or author name to find out more!!</p>
+      </div>
+      
+    </footer>
     <script
      src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
